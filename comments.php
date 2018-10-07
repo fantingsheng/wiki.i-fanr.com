@@ -8,9 +8,9 @@
 		if ( have_comments() ) {
 			// this is displayed if there are comments
 			echo '<h3>';
-			_e('This post currently has', 'wikiwp');
+			_e('这篇文章目前有', 'wikiwp');
 			echo '&nbsp;';
-			comments_number( __('no responses','wikiwp'), __('one response', 'wikiwp'), __('% responses','wikiwp') );
+			comments_number( __('没有回复','wikiwp'), __('one response', 'wikiwp'), __('% responses','wikiwp') );
 			echo '</h3>',
 				 '<ul class="commentlist">';
 			wp_list_comments();
@@ -25,7 +25,7 @@
 				 '</div>';
 		} else {
 			// this is displayed if there are no comments so far
-			_e('So empty here ... leave a comment!', 'wikiwp');
+			_e('还没有评论...留下你的评论!', 'wikiwp');
 		}
 		// load comment form
 		comment_form();

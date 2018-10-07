@@ -31,7 +31,7 @@
                     <div class="widget">
                         <?php
                         // modified date
-                        _e('Last update on', 'wikiwp');
+                        _e('更新于', 'wikiwp');
                         echo '&nbsp;';
                         the_modified_date();
                         ?>
@@ -41,7 +41,7 @@
                         <div class="">
                             <?php
                             // publishing date
-                            _e('Published', 'wikiwp');
+                            _e('发布于', 'wikiwp');
                             echo '&nbsp;';
                             the_date();
                             ?>
@@ -49,7 +49,7 @@
 
                         <div class="">
                             <?php
-                            _e('Author', 'wikiwp');
+                            _e('作者', 'wikiwp');
                             echo ':</strong>&nbsp;';
                             the_author_posts_link();
                             echo '</span>';
@@ -59,7 +59,7 @@
                         <div class="">
                             <?php
                             // categories
-                            _e('Categories', 'wikiwp');
+                            _e('分类', 'wikiwp');
                             echo ':&nbsp;';
                             the_category(', ');
                             ?>

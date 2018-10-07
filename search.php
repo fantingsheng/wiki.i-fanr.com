@@ -9,7 +9,7 @@
                 <h1 class="entryTitle">
                     <?php
                     echo $wp_query->found_posts.'&nbsp;';
-                    printf( __( 'results found for %s', 'wikiwp' ), '<strong>' . get_search_query() . '</strong>' );
+                    printf( __( '%s 的搜索结果', 'wikiwp' ), '<strong>' . get_search_query() . '</strong>' );
                     ?>
                 </h1>
             </header>
@@ -31,8 +31,8 @@
             <?php
             // Pagination
             echo '<div class="posts-pagination">';
-            previous_posts_link('<span class="next-posts-link">&laquo; '.__('Newer Entries', 'wikiwp').'</span>');
-            next_posts_link('<span class="previous-posts-link">'.__('Older Entries', 'wikiwp').' &raquo;</span>');
+            previous_posts_link('<span class="next-posts-link">&laquo; '.__('最新发布', 'wikiwp').'</span>');
+            next_posts_link('<span class="previous-posts-link">'.__('以往发布', 'wikiwp').' &raquo;</span>');
             echo '</div>'; // End of .posts-pagination
             // If no posts were found
             endif; ?>

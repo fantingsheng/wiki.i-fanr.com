@@ -101,11 +101,11 @@ msgid "Published"
 msgstr ""
 
 #. Located in post excerpt
-msgid "read more"
+msgid "查看更多"
 msgstr ""
 
 #. Located in post excerpt
-msgid "Read more"
+msgid "查看更多"
 msgstr ""
 
 #. Located in post meta for wiki posts or pages and post info beneath single posts

@@ -7,12 +7,12 @@
             // edit button
             if (is_user_logged_in()) {
                 echo '<div class="postinfo postinfo-edit">',
-                     '<span>'.__('Author', 'wikiwp').':&nbsp;';
+                     '<span>'.__('作者', 'wikiwp').':&nbsp;';
                 the_author_posts_link();
-                echo '&nbsp;'.__('on', 'wikiwp').'&nbsp;'.get_the_date();
+                echo '&nbsp;'.__('发布于', 'wikiwp').'&nbsp;'.get_the_date();
                 if (is_user_logged_in()) {
                     echo '&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;';
-                    edit_post_link(__('edit', 'wikiwp'));
+                    edit_post_link(__('编辑', 'wikiwp'));
                 }
                 echo '</span>',
                      '</div>'; // end of .postinfo-author
@@ -22,7 +22,7 @@
             if (is_user_logged_in()) {
                 echo '<div class="postinfo postinfo-edit">',
 			         '<span>';
-                edit_post_link(__('edit', 'wikiwp'));
+                edit_post_link(__('编辑', 'wikiwp'));
                 echo '</span>',
                      '</div>'; // end of .postinfo-author
             }
@@ -34,7 +34,7 @@
 		if (is_user_logged_in()) {
 			echo '<div class="postinfo-edit">
                   <div class="edit">';
-			edit_post_link(__('edit', 'wikiwp'));
+			edit_post_link(__('编辑', 'wikiwp'));
 			echo '</div>
                   </div>';
 		}
@@ -44,22 +44,22 @@
 
 		// POST AUTHOR
 		echo '<div class="postinfo postinfo-author">',
-			 '<span>'.__('Author', 'wikiwp').':&nbsp;';
+			 '<span>'.__('作者', 'wikiwp').':&nbsp;';
 		the_author_posts_link();
-		echo '&nbsp;'.__('on', 'wikiwp').'&nbsp;'.get_the_date();
+		echo '&nbsp;'.__('发布于', 'wikiwp').'&nbsp;'.get_the_date();
 		echo '</span>
 			  </div>'; // end of .postinfo-author
 
 		echo '<div class="postinfo postinfo-categories">',
-			 '<span>'.__('Categories', 'wikiwp').':&nbsp;';
+			 '<span>'.__('分类', 'wikiwp').':&nbsp;';
 		the_category(', ');
 		echo '</span>',
 			 '</div>', // end of .postinfo-categories
 			 '<div class="postinfo postinfo-tags">',
-			 '<span>'.__('Tags', 'wikiwp').':&nbsp;';
+			 '<span>'.__('标签', 'wikiwp').':&nbsp;';
 		$tag = get_the_tags();
 		if (! $tag) {
-			echo 'No tags for this post';
+			echo '没有标签';
 		} else {
 			the_tags('',', ','');
 		}
@@ -72,7 +72,7 @@
 		// post navigation
 		echo '<div class="postinfo post-nav clearfix">',
 		 	 '<h4 class="clearfix">';
-		_e('Other posts', 'wikiwp');
+		_e('其它文章', 'wikiwp');
 		echo '</h4>';
 		posts_nav_link();
 		previous_post_link('<span class="previous-post-link">%link &laquo;</span>');

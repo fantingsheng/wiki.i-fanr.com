@@ -15,7 +15,7 @@ get_template_part('navigation');
 	<div class="last-posts-list postinfo clearfix">
 		<hr>
 		<h4 class="lastPostsListTitle">
-			<?php echo __('Last posts', 'wikiwp'); ?>
+			<?php echo __('最近发布文章', 'wikiwp'); ?>
 		</h4>
 
 		<ul>

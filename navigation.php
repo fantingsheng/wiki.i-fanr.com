@@ -1,5 +1,5 @@
 <div class="navMenuButton">
-    <header class="navMenuButtonTitle"><?php echo __('Menu', 'wikiwp'); ?></header>
+    <header class="navMenuButtonTitle"><?php echo __('菜单', 'wikiwp'); ?></header>
     <div class="navMenuButtonContent">
         <hr>
         <hr>
@@ -22,11 +22,11 @@
                 echo '<ul class="default-nav">';
                 // show pages
                 wp_list_pages( $args = array(
-                    'title_li'     => '<span class="menu-title">'. __('Pages', 'wikiwp') .'</span>'
+                    'title_li'     => '<span class="menu-title">'. __('页面', 'wikiwp') .'</span>'
                 ));
                 // show categories
                 wp_list_categories( $args = array(
-                    'title_li'     => '<hr><span class="menu-title">'. __('Categories', 'wikiwp') .'</span>'
+                    'title_li'     => '<hr><span class="menu-title">'. __('分类', 'wikiwp') .'</span>'
                 ));
                 echo '</ul>';
             }

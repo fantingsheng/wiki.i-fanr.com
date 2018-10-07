@@ -300,7 +300,7 @@
 	// CHANGE EXCERPT MORE LINK
 	function wikiwp_excerpt_more($more) {
 	global $post;
-	return '... <a href="'. get_permalink($post->ID) . '">' . __('read more', 'wikiwp').' &raquo;</a>';
+	return '... <a href="'. get_permalink($post->ID) . '">' . __('查看更多', 'wikiwp').' &raquo;</a>';
 	}
 	add_filter('excerpt_more', 'wikiwp_excerpt_more');
 
@@ -348,7 +348,7 @@
         echo ':&nbsp;';
         $tag = get_the_tags();
         if (! $tag) {
-            echo 'There are no tags for this post';
+            echo '这篇文章还没有任何标签';
         } else {
             the_tags('',', ','');
         }
